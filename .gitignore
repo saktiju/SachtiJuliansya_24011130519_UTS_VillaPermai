@@ -1,0 +1,22 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings and temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs and local environment files
+*.log
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output if added later
+node_modules/
+dist/
+coverage/
