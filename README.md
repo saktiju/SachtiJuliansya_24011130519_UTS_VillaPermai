@@ -1,43 +1,67 @@
-# uts-vila-permai
+# UTS Teknologi Web — Aplikasi Pemesanan Vila Permai
 
-Website katalog dan simulasi pemesanan vila untuk **Vila Permai**, penginapan di kawasan Puncak, Kabupaten Bogor. Pengunjung dapat melihat pilihan vila, mencari fasilitas, menghitung perkiraan biaya, dan mengisi formulir pemesanan.
+## Identitas Proyek
 
-## Fitur
+| Informasi | Keterangan |
+|---|---|
+| Nama proyek | Vila Permai — Aplikasi Pemesanan Vila |
+| Jenis proyek | Ujian/latihan Teknologi Web — aplikasi front-end statis |
+| ID proyek | `uts-vila-permai` |
+| NIM | `24011130519` |
+| Repository GitHub | [saktiju/SachtiJuliansya_24011130519_UTS_VillaPermai](https://github.com/saktiju/SachtiJuliansya_24011130519_UTS_VillaPermai) |
 
-- Menampilkan katalog vila beserta tipe, lokasi, fasilitas, harga per malam, dan status ketersediaan.
-- Mencari vila berdasarkan nama atau fasilitas.
-- Memilih vila yang tersedia dan menghitung biaya berdasarkan tanggal check-in dan check-out.
-- Memvalidasi nama pemesan, tanggal menginap, dan jumlah tamu (1–10 orang).
-- Menampilkan ringkasan pemesanan di halaman.
-- Mengingat nama tamu terakhir menggunakan `localStorage` browser.
+Nama mahasiswa dan kelas tidak dicantumkan karena informasinya belum tersedia.
+
+## Deskripsi Aplikasi
+
+Website katalog dan simulasi pemesanan vila di kawasan Puncak, Kabupaten Bogor. Pengunjung dapat melihat informasi vila, mencari berdasarkan nama atau fasilitas, menghitung perkiraan biaya menginap, dan melihat ringkasan pesanan.
+
+Aplikasi ini berjalan sepenuhnya di browser menggunakan HTML, CSS, dan JavaScript. Data vila disimpan sebagai array di dalam kode; aplikasi belum terhubung ke server atau basis data.
+
+## Cara Menjalankan
+
+1. Clone repository:
+
+   ```bash
+   git clone https://github.com/saktiju/SachtiJuliansya_24011130519_UTS_VillaPermai.git uts-vila-permai
+   ```
+
+2. Buka folder `uts-vila-permai`.
+3. Buka `index.html` di browser, atau gunakan ekstensi Live Server di Visual Studio Code.
+
+Tidak perlu memasang paket atau menjalankan proses build. Koneksi internet diperlukan untuk memuat gambar latar dari Unsplash.
+
+## Status Fitur
+
+- [x] Menampilkan katalog vila, harga, fasilitas, dan status ketersediaan.
+- [x] Merender kartu vila secara dinamis dengan JavaScript.
+- [x] Mencari vila berdasarkan nama atau fasilitas.
+- [x] Mengisi pilihan pemesanan hanya dengan vila yang tersedia.
+- [x] Memvalidasi tanggal menginap dan jumlah tamu (1–10 orang).
+- [x] Menghitung perkiraan biaya berdasarkan jumlah malam dan harga per malam.
+- [x] Menampilkan ringkasan pesanan di halaman.
+- [x] Menyimpan nama tamu terakhir di `localStorage`.
+- [x] Menyesuaikan tata letak untuk layar tablet dan ponsel.
 
 ## Teknologi
 
 - HTML
 - CSS
-- JavaScript tanpa framework atau dependensi tambahan
+- JavaScript (tanpa framework)
+- `localStorage` browser
 
-## Menjalankan proyek
-
-1. Unduh atau clone repository ini.
-2. Buka `index.html` di browser, atau jalankan folder proyek dengan ekstensi seperti Live Server di Visual Studio Code.
-
-Tidak diperlukan instalasi paket atau proses build.
-
-## Struktur berkas
+## Struktur Proyek
 
 ```text
 uts-vila-permai/
 ├── index.html   # Struktur halaman katalog dan formulir pemesanan
-├── style.css    # Gaya dan tata letak halaman
 ├── script.js    # Data vila dan interaksi aplikasi
+├── style.css    # Gaya dan tata letak responsif
 └── README.md    # Dokumentasi proyek
 ```
 
-## Mengubah data vila
-
-Data contoh vila berada di array `dataVila` pada `script.js`. Setiap vila memiliki `id`, `nama`, `tipe`, `lokasi`, `harga`, `fasilitas`, dan `tersedia`. Ubah data tersebut untuk memperbarui katalog dan pilihan vila pada formulir.
-
 ## Batasan
 
-Proyek ini merupakan demo front-end. Pemesanan hanya ditampilkan sebagai ringkasan di browser; tidak ada backend, basis data, pembayaran, atau konfirmasi pemesanan sungguhan. Nama tamu terakhir disimpan hanya di browser yang digunakan.
+Proyek ini merupakan demo front-end. Pemesanan hanya menghasilkan ringkasan di browser dan belum dikirim atau disimpan ke server. Status ketersediaan vila menggunakan data contoh tetap; tidak ada pemeriksaan jadwal, pembayaran, atau konfirmasi WhatsApp otomatis.
+
+Data vila dapat diubah pada array `dataVila` di `script.js`.
