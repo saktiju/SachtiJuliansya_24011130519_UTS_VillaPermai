@@ -43,6 +43,16 @@ Tidak perlu memasang paket atau menjalankan proses build. Koneksi internet diper
 - [x] Menyimpan nama tamu terakhir di `localStorage`.
 - [x] Menyesuaikan tata letak untuk layar tablet dan ponsel.
 
+## Tangkapan Layar
+
+### Tampilan Desktop
+
+![Tampilan aplikasi Vila Permai di desktop](assets/screenshots/desktop.png)
+
+### Tampilan Mobile
+
+![Tampilan aplikasi Vila Permai di mobile](assets/screenshots/mobile.png)
+
 ## Teknologi
 
 - HTML
@@ -54,6 +64,10 @@ Tidak perlu memasang paket atau menjalankan proses build. Koneksi internet diper
 
 ```text
 uts-vila-permai/
+├── assets/
+│   └── screenshots/
+│       ├── desktop.png  # Tangkapan layar tampilan desktop
+│       └── mobile.png   # Tangkapan layar tampilan mobile
 ├── index.html   # Struktur halaman katalog dan formulir pemesanan
 ├── script.js    # Data vila dan interaksi aplikasi
 ├── style.css    # Gaya dan tata letak responsif
@@ -65,3 +79,14 @@ uts-vila-permai/
 Proyek ini merupakan demo front-end. Pemesanan hanya menghasilkan ringkasan di browser dan belum dikirim atau disimpan ke server. Status ketersediaan vila menggunakan data contoh tetap; tidak ada pemeriksaan jadwal, pembayaran, atau konfirmasi WhatsApp otomatis.
 
 Data vila dapat diubah pada array `dataVila` di `script.js`.
+
+## Riwayat Commit
+
+| Commit | Ringkasan |
+|---|---|
+| `Initial project upload` | Menambahkan halaman, stylesheet, dan skrip aplikasi. |
+| `Add project README` | Menambahkan dokumentasi dasar proyek. |
+| `docs: improve project README` | Melengkapi identitas, fitur, cara menjalankan, dan batasan proyek. |
+| `docs: add desktop and mobile screenshots` | Menambahkan tangkapan layar desktop dan mobile serta dokumentasinya. |
+
+Lihat [riwayat commit terbaru di GitHub](https://github.com/saktiju/SachtiJuliansya_24011130519_UTS_VillaPermai/commits/main/) atau jalankan `git log -5 --oneline` di folder proyek.
